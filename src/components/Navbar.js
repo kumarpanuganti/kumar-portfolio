@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <nav className="nav-container">
-      <h1 className="nav-container-hdng">K</h1>
+      <h1 className="nav-container-hdng">KUMAR</h1>
       <div className={isOpen ? "nav-container-list active" :"nav-container-list"}>
         <h5>Home</h5>
         <h5>Home</h5>
