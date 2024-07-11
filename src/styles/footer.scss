@@ -1,0 +1,19 @@
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a1a2e;
+  color: white;
+  height: 60px;
+  h4{
+    font-weight: 600;
+  }
+  .social-icons {
+    a {
+      svg {
+        font-size: 30px;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -4,8 +4,8 @@ import Home from "../Home";
 import Aboutme from "../Aboutme";
 import Navbar from "../Navbar";
 import MyWork from "../MyWork";
-import MySkills from "../MySkills";
 import Contact from "../Contact";
+import Footer from "../Footer";
 
 const index = () => {
   return (
@@ -15,9 +15,9 @@ const index = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<Aboutme />} />
         <Route path="/my-work" element={<MyWork />} />
-        <Route path="/my-skills" element={<MySkills />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

@@ -5,7 +5,7 @@ const Aboutme = () => {
     <div className="about-me">
       <div className="container">
         <div className="about-me-content">
-          <div>
+          <div className="mb-5">
             <h1>Education</h1>
             <div className="about-me-content-pnt">
               <img
