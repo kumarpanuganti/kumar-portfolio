@@ -102,7 +102,7 @@ const Home = () => {
                       duration: 1,
                     }}
                   >
-                    Know more
+                    KNOW MORE
                   </motion.button>
                 </div>
               </motion.div>
