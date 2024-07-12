@@ -1,10 +1,15 @@
 import React from "react";
-import MyPic from "../Images/MyPic.jpeg";
+import { motion } from "framer-motion";
 
 const Project = ({ project }) => {
   return (
     <div className="mywork-comp-project mb-5">
-      <div className="mywork-comp-project-content">
+      <motion.div
+        className="mywork-comp-project-content"
+        initial={{ x: "-100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 50, duration: 1 }}
+      >
         <div>
           <h3>{project.title}</h3>
           <p className="mb-4">{project.description}</p>
@@ -17,23 +22,22 @@ const Project = ({ project }) => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="mywork-comp-project-image">
+      </motion.div>
+      <motion.div
+        className="mywork-comp-project-image"
+        initial={{ x: "100vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 50, duration: 1 }}
+      >
         <div className="mywork-comp-project-image-cont">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSQ7N8BhIEZf6iQkL9BDT8CjTfy1kseXluA&s"
-            alt={`${project.title} screenshot`}
-          />
+          <img src={project.image} alt={`${project.title} screenshot`} />
         </div>
-        <div className="text-center">
+        <div className="mywork-comp-project-image-link">
           <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>
-          <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
-            Source Code
+            <h2>{project.title}</h2>
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,12 @@ const Contact = () => {
   };
   return (
     <div className="contact">
-      <section className="contact-section">
+      <motion.section
+        className="contact-section"
+        initial={{ y: "-100vh", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 50, duration: 1 }}
+      >
         <h2>Contact Me</h2>
         <h6>
           I'd love to hear from you! Please fill out the form below or reach out
@@ -53,7 +59,7 @@ const Contact = () => {
           <textarea
             name="message"
             className="form-control mb-4"
-            placeholder="Your Message"  
+            placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
             required
@@ -70,11 +76,14 @@ const Contact = () => {
             <a
               href="https://linkedin.com/in/kumar-panuganti-733412253"
               target="_blank"
-              rel="noopener noreferrer"> linkedin.com/in/kumar-panuganti-733412253
+              rel="noopener noreferrer"
+            >
+              {" "}
+              linkedin.com/in/kumar-panuganti-733412253
             </a>
           </p>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

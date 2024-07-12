@@ -5,14 +5,29 @@
   background-color: #1a1a2e;
   color: white;
   height: 60px;
+  h2{
+    font-weight: 600;
+    @media (max-width:767px){
+      font-size: 18px;
+    }
+  }
   h4{
     font-weight: 600;
+    @media (max-width:767px){
+      font-size: 16px;
+    }
   }
   .social-icons {
+    display: flex;
+    align-items: center;
     a {
       svg {
         font-size: 30px;
         margin-right: 2rem;
+        @media (max-width:767px){
+          font-size: 20px;
+          margin-right: 1rem;
+        }
       }
     }
   }
