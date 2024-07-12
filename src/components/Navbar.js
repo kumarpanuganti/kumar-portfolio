@@ -11,6 +11,7 @@ const Navbar = () => {
   const handleNavigation = (path) => {
     window.scrollTo(0, 0);
     navigate("/");
+    setIsOpen(false);
   };
   return (
     <nav className="nav-container">
