@@ -5,9 +5,7 @@ import RoutesComponent from "./components/routes/index";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <RoutesComponent />
-      {/* <Home /> */}
     </div>
   );
 }
