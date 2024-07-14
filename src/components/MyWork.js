@@ -35,7 +35,7 @@ const MyWork = () => {
   return (
     <div className="mywork-comp">
       <div className="container">
-        <h1>Project Highlights</h1>
+        <h1 className="mywork-comp-hdng">Project Highlights</h1>
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}

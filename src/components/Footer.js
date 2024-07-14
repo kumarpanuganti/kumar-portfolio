@@ -4,8 +4,8 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <nav className="footer-container">
-      <h2>Kumar Panuganti</h2>
-      <div className="social-icons">
+      <h2 className="footer-container-name">Kumar Panuganti</h2>
+      <div className="footer-container-social-icons">
         <a
           href="mailto:your.kpanuganti82@gmail.com"
           target="_blank"
@@ -24,7 +24,7 @@ const Footer = () => {
           <FaGithub />
         </a>
       </div>
-      <h4>+91 8074882816</h4>
+      <h4 className="footer-container-numb">+91 8074882816</h4>
     </nav>
   );
 };

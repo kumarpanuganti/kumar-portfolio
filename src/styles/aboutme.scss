@@ -3,8 +3,15 @@
   color: #f2e7e7; /* dark gray text for readability */
   background-color: #255152;
   padding: 6rem 1.5rem 2rem;
+  overflow-y: hidden;
+  @media (max-width: 767px) {
+    padding: 5rem 0 1rem;
+  }
   &-content {
     padding: 35px 25px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
     h1 {
       margin-bottom: 35px;
       font-weight: bold;

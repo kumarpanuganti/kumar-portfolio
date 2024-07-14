@@ -3,13 +3,14 @@
   color: #16213e;
   background-color: #255152;
   @media (max-width: 767px) {
-    padding: 8rem 0 2rem;
+    padding: 6rem 0 2rem;
+    overflow-y: hidden;
   }
   &-welcome {
     padding: 2rem 3rem;
     border-radius: 2rem;
     @media (max-width: 767px) {
-      padding: 2rem;
+      padding: 2rem 1.5rem;
     }
     &-img {
       width: 300px;
@@ -44,6 +45,7 @@
       justify-content: center;
       border-bottom-right-radius: 30px;
       border-bottom-left-radius: 30px;
+      // border-radius: 30px;
       border: 2px solid whitesmoke;
       @media (max-width: 768px) {
         flex-direction: column;
@@ -55,6 +57,7 @@
         margin: 0 auto;
         @media (max-width: 767px) {
           margin-bottom: 25px;
+          width: 95%;
         }
         img {
           width: 100%;
